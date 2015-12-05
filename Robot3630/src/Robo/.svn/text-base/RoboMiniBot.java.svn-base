@@ -1,0 +1,30 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package Robo;
+
+import edu.wpi.first.wpilibj.Servo;
+
+/**
+ *
+ * @author paul
+ */
+
+public class RoboMiniBot {
+    Servo deploymentServo = new Servo(4, 9);
+    Servo alignmentServo = new Servo(4, 10);
+
+    // NOTE:
+    void deploy(){
+        deploymentServo.set(1.0);
+    }
+
+    public void setServo1(double d){
+        deploymentServo.set(d);
+    }
+    public void setServo2(double d){
+        alignmentServo.set(d);
+    }
+}
